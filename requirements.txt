@@ -1,0 +1,9 @@
+pandas==2.2.2
+numpy==2.0.2
+optuna==4.2.1
+datasets==3.4.1
+transformers==4.48.3
+peft==0.14.0
+scipy==1.14.1
+scikit-learn==1.6.1
+bitsandbytes==0.45.3
