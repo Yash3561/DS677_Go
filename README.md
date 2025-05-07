@@ -108,7 +108,7 @@ SelfAlign_Project/
 2.  **Start vLLM Server (Terminal 1):**
     ```bash
     conda activate selfalign_env
-    MODEL="bigcode/starcoder2-3b" # Or 15b
+    MODEL="bigcode/starcoder2-15b" # Or 3b
     python -m vllm.entrypoints.openai.api_server \
         --model $MODEL \
         --dtype bfloat16 \
