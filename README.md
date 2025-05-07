@@ -47,8 +47,8 @@ SelfAlign_Project/
 
 1.  **Clone this Repository (Optional - if sharing):**
     ```bash
-    git clone [URL_of_your_GitHub_repo]
-    cd [Repo_Name]
+    git clone https://github.com/Yash3561/DS677_Go.git
+    cd DS677_Go
     ```
 2.  **Conda Environment:** Create and activate the Conda environment using Python 3.11.11 and the provided `requirements.txt`.
     ```bash
