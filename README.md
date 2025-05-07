@@ -39,7 +39,7 @@ SelfAlign_Project/
 ├── Step3_Validated_Data/                 # Final output of the pipeline
 │   └── validated_go_instructions_final.jsonl  <-- Final validated dataset
 ├── requirements.txt                      # Requirements for the Conda environment (pip freeze output)
-└── README.md                             # This file...
+└── README.md                             # This file```
 
 
 ## Setup
