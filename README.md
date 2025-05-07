@@ -20,25 +20,26 @@ The project follows the 3-step Self-Align framework:
 
 ## Directory Structure
 
+```text
 SelfAlign_Project/
-├── Step_1_SeedGathering/ # Notebook and outputs from Step 1 (Initial extraction + filtering)
-│ ├── Step1_GOLang.ipynb
-│ ├── seed1_extracted_dataset/
-│ ├── seed2_heuristically_filtered_subset/
-│ └── seed3_llm_filtered_subset/ <-- Input for Step 2 (S->C)
-├── Step2_SelfInstruct/ # Contains cloned selfcodealign repo and Step 2 results/scripts
-│ ├── selfcodealign/ # Cloned bigcode-project/selfcodealign repo
-│ │ ├── prompts/ # Contains edited self-ossinstruct-fewshot.txt
-│ │ ├── src/star_align/ # Contains edited self_ossinstruct.py, execution_filter.py etc.
-│ │ └── requirements.txt # Original repo requirements
-│ ├── results/ # Output .jsonl files from Step 2 (S->C, C->I) and Step 3 (I->R)
-│ │ ├── data...Go-SC...jsonl <-- Output of S->C, Input for C->I
-│ │ └── data...Go-CI...jsonl <-- Output of C->I, Input for I->R
-│ └── validate_go_instructions.py # Custom script for Step 3 Go validation
-├── Step3_Validated_Data/ # Final output of the pipeline
-│ └── validated_go_instructions_final.jsonl <-- Final validated dataset
-└── requirements.txt # Requirements for the Conda environment (pip freeze output)
-└── README.md # This file
+├── Step_1_SeedGathering/                 # Notebook and outputs from Step 1 (Initial extraction + filtering)
+│   ├── Step1_GOLang.ipynb
+│   ├── seed1_extracted_dataset/
+│   ├── seed2_heuristically_filtered_subset/
+│   └── seed3_llm_filtered_subset/        <-- Input for Step 2 (S->C)
+├── Step2_SelfInstruct/                   # Contains cloned selfcodealign repo and Step 2 results/scripts
+│   ├── selfcodealign/                    # Cloned bigcode-project/selfcodealign repo
+│   │   ├── prompts/                      # Contains edited self-ossinstruct-fewshot.txt
+│   │   ├── src/star_align/              # Edited self_ossinstruct.py, execution_filter.py, etc.
+│   │   └── requirements.txt             # Original repo requirements
+│   ├── results/                          # Output .jsonl files from Step 2 (S->C, C->I) and Step 3 (I->R)
+│   │   ├── data...Go-SC...jsonl         <-- Output of S->C, Input for C->I
+│   │   └── data...Go-CI...jsonl         <-- Output of C->I, Input for I->R
+│   └── validate_go_instructions.py       # Custom script for Step 3 Go validation
+├── Step3_Validated_Data/                 # Final output of the pipeline
+│   └── validated_go_instructions_final.jsonl  <-- Final validated dataset
+├── requirements.txt                      # Requirements for the Conda environment (pip freeze output)
+└── README.md                             # This file
 
 
 ## Setup
