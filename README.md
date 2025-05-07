@@ -58,7 +58,6 @@ SelfAlign_Project/
     # Install packages using pip and the requirements file
     pip install -r requirements.txt
     ```
-    *(Note: The requirements.txt was generated using `pip freeze` and includes dependencies like torch, vllm, datasets, transformers, openai, tenacity, tree-sitter, tree-sitter-go etc., compatible with Python 3.11.11 in the execution environment.)*
 3.  **Install Go:** The Go compiler is required for Step 3 validation. Install it within the environment or ensure it's available in your system PATH. Verify with `go version`.
     ```bash
     # Activate env first: conda activate selfalign_env
