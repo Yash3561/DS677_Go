@@ -45,7 +45,7 @@ SelfAlign_Project/
 
 ## Setup
 
-1.  **Clone this Repository (Optional - if sharing):**
+1.  **Clone this Repository:**
     ```bash
     git clone https://github.com/Yash3561/DS677_Go.git
     cd DS677_Go
