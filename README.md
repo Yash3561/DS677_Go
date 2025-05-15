@@ -173,7 +173,7 @@ SelfAlign_Project/
 
 **Step 3: Self-Validation (Script)**
 
-1.  **Prepare Validation Script:** Ensure `validate_go_instructions.py` exists (e.g., in `Step2_SelfInstruct/`) and is updated to handle Go, potentially using `goimports`. Ensure the `input_jsonl_file` path inside it points to the correct C->I output file, and `output_validated_file` points to the desired final location (e.g., `../Step3_Validated_Data/validated_go_instructions_final.jsonl`).
+1.  **Prepare Validation Script: Ensure execution_filter.py exists (e.g., in /Step2_SelfInstruct/selfcodealign/src/star_align/) and is updated to handle Go, potentially using goimports. Ensure the input_jsonl_file path inside it points to the correct C->I output file, and output_validated_file points to the desired final location (e.g., ../Step3_Validated_Data/validated_go_instructions_final.jsonl).
 2.  **Run Validation:**
     ```bash
     conda activate selfalign_env
@@ -182,7 +182,7 @@ SelfAlign_Project/
     # Ensure Go is installed and goimports is in PATH
     go version
     goimports -h # Check if goimports is found
-    python validate_go_instructions.py
+    python execution_filter.py
     ```
     *   **Input:** The C->I or I->R output JSONL file (specified inside the script).
     *   **Output:** `Step3_Validated_Data/validated_go_instructions_final.jsonl` containing pairs where `go test` passed.
